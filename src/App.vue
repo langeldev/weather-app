@@ -96,7 +96,7 @@ onMounted(() => {
        <div class="w-full sm:w-7/12 md:w-6/12"  >
           <CurrentWeather
               :name="name"
-              :country="weather.sys.country"
+              :icon="weather.weather[0].icon"
               :temp="weather.main.temp"
               :temp_max="weather.main.temp_max"
               :temp_min="weather.main.temp_min"
