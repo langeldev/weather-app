@@ -1,9 +1,8 @@
 <script setup>
-import {ref, onMounted } from 'vue'
-const el = ref()
+import { onMounted } from 'vue'
+
 onMounted(()=> {
 const tealToggle = document.getElementById('teal-toggle')
-console.log(tealToggle);
 tealToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark');
 })

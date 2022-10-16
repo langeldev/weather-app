@@ -1,6 +1,22 @@
+<script setup>
+  import { ref, defineEmits } from 'vue'
+  const citySearch = ref('')
+
+  const emit = defineEmits(['getCoords', 'search'])
+
+  const handleSearch = () => {
+    emit('search', citySearch.value.trim())
+    citySearch.value = '';
+  }
+
+  const handleClick = () => {
+    emit('getCoords')
+  }
+</script>
 <template>
   <div class="w-full sm:w-6/12 md:w-12/12 h-[48px] px-4 relative">
     <button
+      @click.prevent="handleClick"
       type="button"
       aria-label="focus"
       class="h-[48px] w-1/12 float-right absolute right-6"
@@ -18,6 +34,8 @@
       </svg>
     </button>
     <input
+      v-model="citySearch"
+      @keydown.enter="handleSearch"
       type="text"
       placeholder="Search..."
       class="p-3
