@@ -83,7 +83,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col max-w-5xl mx-auto p-4">
+  <div class="min-h-screen flex flex-col max-w-5xl mx-auto p-4 font-albert">
     <header class="flex justify-between pb-8">
       <LocationTools
       @get-coords="getLocation"

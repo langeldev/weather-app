@@ -6,7 +6,14 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+      fontFamily: {
+        'roboto': "'Roboto', sans-serif",
+        'albert': "'Albert Sans', sans-serif"
+      },
+
+    extend: {
+
+    },
   },
   plugins: [],
 }

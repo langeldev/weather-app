@@ -46,9 +46,9 @@
         rounded-full
         px-3
         text-[18px]
-      text-sky-400
+      text-sky-800
       dark:text-lime-50
-      placeholder:text-sky-400
+      placeholder:text-sky-800
       dark:placeholder:text-lime-50
        border
       border-gray-300

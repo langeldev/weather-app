@@ -16,6 +16,8 @@ defineProps({
         {{dt_txt}}
         <BaseIcons :name="icon" :size="64" />
         <span>{{description}}</span>
+       <span class="font-roboto">
         {{temp_max}}&deg;/{{temp_min}}&deg;
+       </span>
 </div>
 </template>
