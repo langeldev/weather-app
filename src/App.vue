@@ -6,6 +6,7 @@ import LocationTools from "./components/LocationTools.vue";
 import DarkMode from "./components/DarkMode.vue";
 import CurrentWeather from "./components/CurrentWeather.vue";
 import Forecast from "./components/ForecastList.vue";
+import Chars from "./components/Chars.vue";
 
 const weather = ref({})
 const forecast = ref([])
@@ -112,6 +113,7 @@ onMounted(() => {
         </div>
         <div class="w-full sm:w-5/12 md:w-6/12 mt-8 sm:mt-0">
           <Forecast :forecast="forecast"/>
+          <Chars :forecast="forecast"/>
         </div>
       </div>
       <div v-else class="sm:w-5/12 flex items-center justify-center rounded-md sm:ml-8 mr-auto text-center text-xl text-sky-400 bg-[rgba(251,252,251,.8)] dark:bg-[rgba(55,68,74,.8)] shadow-[0_10px_30px_-12px_rgba(7,89,133,0.45)]">
