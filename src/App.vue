@@ -129,7 +129,7 @@ onMounted(() => {
     </main>
     <footer class="flex justify-between p-4 mt-2 dark:text-sky-400">
       &copy; by langeldev {{year}}
-      <a href="#">
+      <a href="https://github.com/langeldev/weather-app" target="_blank">
       <span class="dark:text-sky-400">
          GitHub
       </span>
