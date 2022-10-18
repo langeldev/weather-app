@@ -14,7 +14,7 @@ function rounded(value) {
     class="w-full p-4 bg-[rgba(251,252,251,.2)] font-medium text-sky-800 dark:text-sky-400 dark:bg-[rgba(55,68,74,.5)]  shadow-[0_10px_30px_-12px_rgba(7,89,133,0.45)] rounded-md"
   >
     <div
-      class="flex flex-wrap rounded-md bg-[rgba(251,252,251,.6)] dark:bg-[rgba(55,68,74,.8)] overflow-hidden shadow-[0_10px_30px_-12px_rgba(7,89,133,0.45)]"
+      class="flex flex-wrap rounded-md bg-[rgba(251,252,251,.6)] dark:bg-[rgba(55,68,74,.8)] overflow-hidden shadow-[0_10px_30px_-12px_rgba(7,89,133,0.45)] break-world"
     >
       <Forecast
         :dt_txt="getDay(item.dt_txt)"

@@ -24,8 +24,8 @@ Chart.register(...registerables);
 Chart.defaults.font = {
   size: 12,
   family: "'Albert Sans', sans-serif",
-  weight: 600
-}
+  weight: 500,
+};
 
 export default defineComponent({
   components: { LineChart },
@@ -54,9 +54,9 @@ export default defineComponent({
       scales: {
         y: {
           ticks: {
-              color: "#51BDF8",
-              beginAtZero: true,
-              },
+            color: "#51BDF8",
+            beginAtZero: true,
+          },
         },
         x: {
           ticks: {
@@ -68,6 +68,9 @@ export default defineComponent({
       plugins: {
         legend: {
           position: "bottom",
+          labels: {
+            color: '#51BDF8'
+          },
         },
         title: {
           display: true,
@@ -94,6 +97,8 @@ export default defineComponent({
           {
             type: "line",
             label: "Feels like",
+            labelFontColor: "red",
+
             data: props.forecast.map((item) =>
               Math.round(item.main.feels_like)
             ),
