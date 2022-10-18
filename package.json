@@ -1,5 +1,6 @@
 {
   "name": "weather-app",
+  "license": "MIT",
   "author": "Miguel A. Rodriguez",
   "private": true,
   "version": "0.0.0",
