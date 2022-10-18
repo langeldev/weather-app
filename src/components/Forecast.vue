@@ -12,10 +12,12 @@ defineProps({
 </script>
 
 <template>
-<div class="min-w-[5rem] grow flex flex-col justify-center items-center p-2">
+<div class="min-w-[50%] md:min-w-[25%] lg:min-w-[25%] flex grow flex-col items-center p-2 ">
         {{dt_txt}}
         <BaseIcons :name="icon" :size="64" />
-        <span>{{description}}</span>
+        <span class="text-center w-full sm:w-[5rem] lg:w-[4.2rem] grow">{{description}}</span>
+       <span class="font-roboto">
         {{temp_max}}&deg;/{{temp_min}}&deg;
+       </span>
 </div>
 </template>

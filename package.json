@@ -1,5 +1,6 @@
 {
   "name": "weather-app",
+  "author": "Miguel A. Rodriguez",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "chart.js": "^3.9.1",
+    "vue": "^3.2.37",
+    "vue-chart-3": "^3.1.8"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",

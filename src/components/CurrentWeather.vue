@@ -27,22 +27,22 @@ defineProps({
 
 </script>
 <template>
-  <div class="px-2 w-full">
+  <div class="px-2 w-full text-sky-800 dark:text-sky-400 font-semibold text-md flex-wrap">
     <div
       class="flex flex-col p-4 rounded-md sm:ml-4 relative bg-[rgba(251,252,251,.8)] dark:bg-[rgba(55,68,74,.8)] shadow-[0_10px_30px_-12px_rgba(7,89,133,0.45)]"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 14 20" class="fill-current text-sky-400 absolute top-6">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 14 20" class="fill-current  absolute top-6">
         <path d="M7 0C3.13 0 0 3.13 0 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5C5.62 9.5 4.5 8.38 4.5 7S5.62 4.5 7 4.5 9.5 5.62 9.5 7 8.38 9.5 7 9.5z"></path>
       </svg>
-      <h1 class="font-arial font-black text-3xl text-sky-400 pl-8 text-ellipsis overflow-hidden break-world">
+      <h1 class="font-black text-3xl  pl-8 text-ellipsis overflow-hidden break-world font-roboto">
         {{name}}
       </h1>
-      <h2 class="text-sky-800 dark:text-lime-50 font-bold pl-8 mb-3">
+      <h2 class=" dark:text-lime-50 font-bold pl-8 mb-3">
         {{date}}
       </h2>
       <div class="text-center my-6 flex flex-wrap">
         <div
-          class="text-center w-10/12 mx-auto text-xl font-normal text-sky-400 flex justify-between align-middle"
+          class="text-center w-10/12 mx-auto text-xl font-normal  flex justify-between align-middle"
         >
           <div>
             <BaseIcon :name="icon" :size="88" />
@@ -52,10 +52,9 @@ defineProps({
             <h4>{{description}}</h4>
           </div>
         </div>
-        <div class="text-7xl text-sky-400 mt-8 w-2/3 text-right">{{rounded(temp)}}&deg;</div>
-        <div class="w-1/3 flex flex-col justify-end items-start pt-9">
-
-          <div class="flex text-yellow-400">
+        <div class="text-7xl  mt-8 w-2/3 text-right font-roboto">{{rounded(temp)}}&deg;</div>
+        <div class="w-1/3 flex flex-col justify-end items-start pt-9 font-roboto">
+          <div class="flex text-yellow-400 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -71,7 +70,7 @@ defineProps({
             </svg>
             <span class="text-xl font-semibold">{{rounded(temp_max)}}&deg;</span>
           </div>
-          <div class="flex my-2 text-sky-400">
+          <div class="flex my-2 text-sky-400 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -88,13 +87,13 @@ defineProps({
             <span class="text-xl font-semibold">{{rounded(temp_min)}}&deg;</span>
           </div>
         </div>
-        <div class="text-center w-full text-xl font-normal text-sky-400">
+        <div class="text-center w-full text-xl font-normal ">
           Feel Like {{rounded(feels_like)}}º
         </div>
       </div>
           <div class="flex justify-around border-b-2 border-b-sky-200 p-4">
         <div
-          class="flex flex-col items-center text-sm font-medium text-sky-400"
+          class="flex flex-col items-center text-sm font-medium "
         >
           sunrise
           <svg
@@ -115,7 +114,7 @@ defineProps({
         </div>
 
         <div
-          class="flex flex-col items-center text-sm font-medium text-sky-400"
+          class="flex flex-col items-center text-sm font-medium "
         >
           sunset
           <svg
@@ -135,7 +134,7 @@ defineProps({
         </div>
       </div>
       <div class="flex text-center justify-center gap-4 my-4">
-        <div class="mx-auto flex flex-col items-center text-sky-400">
+        <div class="mx-auto flex flex-col items-center ">
           cloudiness
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +150,7 @@ defineProps({
           </svg>
           {{rounded(cloudiness)}}%
         </div>
-        <div class="mx-auto flex flex-col items-center text-sky-400">
+        <div class="mx-auto flex flex-col items-center ">
         humidity
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +171,7 @@ defineProps({
           </svg>
         {{humidity}}%
         </div>
-        <div class="mx-auto flex flex-col items-center text-sky-400">
+        <div class="mx-auto flex flex-col items-center ">
         wind speed
           <svg
             xmlns="http://www.w3.org/2000/svg"
