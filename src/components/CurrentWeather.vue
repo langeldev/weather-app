@@ -1,6 +1,8 @@
 <script setup>
 import { computed } from 'vue'
+
 import BaseIcon from './BaseIcons.vue'
+import {rounded} from '../utils'
 
 defineProps({
   name: String,
@@ -21,9 +23,7 @@ defineProps({
 
  const date = computed(() => new Date().toDateString())
 
- function rounded(value) {
-  return Math.round(value)
-}
+
 
 </script>
 <template>

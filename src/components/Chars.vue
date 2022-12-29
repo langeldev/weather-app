@@ -19,6 +19,7 @@ import { ref } from "vue";
 import { computed, defineComponent } from "vue";
 import { LineChart } from "vue-chart-3";
 import { Chart, registerables } from "chart.js";
+import { getWeekDay } from  '../utils'
 
 Chart.register(...registerables);
 Chart.defaults.font = {
@@ -35,17 +36,9 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const weekday = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ];
+
     const listDay = computed(() => [
-      ...props.forecast.map((item) => getDay(item.dt_txt)),
+      ...props.forecast.map((item) => getWeekDay(item.dt_txt)),
     ]);
 
     const options = ref({
@@ -118,11 +111,6 @@ export default defineComponent({
         ],
       };
     });
-
-    function getDay(d) {
-      return weekday[new Date(d).getDay()];
-    }
-
     return { tempData, options };
   },
 });
